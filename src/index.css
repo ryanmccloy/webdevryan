@@ -1,0 +1,22 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @apply p-30 overflow-hidden bg-background font-sans text-sm tracking-wide text-primary md:text-base;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-extrabold;
+}
