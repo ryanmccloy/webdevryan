@@ -1,6 +1,6 @@
 function LandingBottom() {
   return (
-    <div className="gap-15 flex flex-col items-end self-end">
+    <div className="gap-15 flex flex-col items-end self-end sm:w-2/3 md:w-1/2 xl:w-1/3">
       <div className="h-[125px] w-[120px]">
         <img
           src="/ryan.jpg"

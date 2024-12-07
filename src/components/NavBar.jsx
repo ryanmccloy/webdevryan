@@ -6,7 +6,7 @@ function NavBar() {
   const menuRef = useRef();
 
   const iconBaseClasses =
-    "absolute inset-0 transform transition-all duration-300";
+    "absolute inset-0 transform transition-all duration-300 ";
   const liBaseClasses =
     "hover:cursor-pointer hover:font-medium transition-font duration-300 ";
 
@@ -62,7 +62,7 @@ function NavBar() {
             size={20}
             className={`${iconBaseClasses} ${
               showNavMenu ? "scale-75 opacity-0" : "scale-100 opacity-100"
-            }`}
+            } `}
           />
 
           {/* Cross Icon */}
@@ -76,7 +76,7 @@ function NavBar() {
 
         <nav aria-label="Main navigation">
           <ul
-            className={`gap-15 absolute right-0 top-10 z-10 flex flex-col items-end whitespace-nowrap transition-all duration-300 ${showNavMenu ? "translate-x-0" : "translate-x-[200px]"} `}
+            className={`gap-15 top-30 absolute right-0 z-10 flex flex-col items-end whitespace-nowrap transition-all duration-300 ${showNavMenu ? "translate-x-0" : "translate-x-[200px]"} `}
             id="mobile-menu"
           >
             <li className={`${liBaseClasses}`}>Services</li>
