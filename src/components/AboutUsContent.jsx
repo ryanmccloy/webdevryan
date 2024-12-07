@@ -2,7 +2,7 @@ import AboutUsContentParagraph from "./AboutUsContentParagraph";
 
 function AboutUsContent() {
   return (
-    <div className="">
+    <div className="md:w-2/3 lg:w-1/2">
       <AboutUsContentParagraph padding="pb-30">
         Your website is more than just a digital storefront—it’s the foundation
         of your online presence. It’s where first impressions are made, trust is
@@ -14,7 +14,10 @@ function AboutUsContent() {
         designed to work as hard as you do.
       </AboutUsContentParagraph>
 
-      <AboutUsContentParagraph padding="py-30  " bg="bg-secondary">
+      <AboutUsContentParagraph
+        padding="py-30  "
+        bg="bg-secondary md:bg-background"
+      >
         Every detail matters when it comes to building a successful website.
         From intuitive navigation to seamless performance across devices, I
         focus on creating a user experience that keeps visitors engaged and
