@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Principle from "./Principle";
+import { BsFillHandIndexFill } from "react-icons/bs";
 
 const principles = [
   {
@@ -39,15 +41,23 @@ const principles = [
 ];
 
 function WebsiteFeatures() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
     <div className="gap-15 md:gap-30 flex flex-col sm:w-2/3 sm:self-end md:w-1/2">
-      {principles.map((principle) => {
+      {principles.map((principle, index) => {
         return (
           <Principle
             key={principle.num}
             heading={principle.heading}
             num={principle.num}
             content={principle.content}
+            isActive={activeIndex === index}
+            onToggle={() => handleToggle(index)}
           />
         );
       })}
