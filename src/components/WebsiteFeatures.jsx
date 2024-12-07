@@ -47,6 +47,7 @@ function WebsiteFeatures() {
             key={principle.num}
             heading={principle.heading}
             num={principle.num}
+            content={principle.content}
           />
         );
       })}
