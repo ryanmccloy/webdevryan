@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Principle from "./Principle";
-import { BsFillHandIndexFill } from "react-icons/bs";
 
 const principles = [
   {
@@ -52,7 +51,7 @@ function WebsiteFeatures() {
       {principles.map((principle, index) => {
         return (
           <Principle
-            key={principle.num}
+            key={index}
             heading={principle.heading}
             num={principle.num}
             content={principle.content}
