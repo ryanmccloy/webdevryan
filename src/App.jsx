@@ -26,5 +26,4 @@ function App() {
 
 export default App;
 
-// favicon and title
 // indication to click on accordion on features section

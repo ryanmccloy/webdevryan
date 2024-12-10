@@ -2,10 +2,20 @@ import LandingHeading from "./LandingHeading";
 import GetInTouchButton from "./GetInTouchButton";
 
 function CTA() {
+  const scrollToContactUs = () => {
+    const contactUsSection = document.getElementById("contact-us");
+
+    if (contactUsSection) {
+      contactUsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="leading-14 mt-90 gap-30 md:mt-150 flex flex-col leading-normal">
+    <div className="leading-14 mt-90 flex flex-col gap-30 leading-normal md:mt-150">
       <LandingHeading />
-      <GetInTouchButton />
+      <GetInTouchButton label="Contact Us" onClick={scrollToContactUs}>
+        Get In Touch
+      </GetInTouchButton>
     </div>
   );
 }
