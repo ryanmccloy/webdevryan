@@ -26,4 +26,8 @@ function App() {
 
 export default App;
 
+// code review contactus
+// code review footer
+// form submission data (CRM software??)
+// webpage animations
 // indication to click on accordion on features section
