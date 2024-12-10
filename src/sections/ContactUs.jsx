@@ -3,7 +3,7 @@ import ContactUsHeading from "../components/ContactUsHeading";
 
 function ContactUs() {
   return (
-    <section className="section-spacing" id="contact-us">
+    <section className="section-spacing lg:flex-row-reverse" id="contact-us">
       <ContactUsHeading />
       <ContactForm />
     </section>

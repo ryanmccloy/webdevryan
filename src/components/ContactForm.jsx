@@ -29,7 +29,7 @@ function ContactForm() {
   };
 
   return (
-    <form className="flex flex-col gap-30" onSubmit={handleSubmit}>
+    <form className="flex flex-1 flex-col gap-30" onSubmit={handleSubmit}>
       <div className={`${formStyles}`}>
         <label htmlFor="name" className={`${labelStyles}`}>
           Name
@@ -58,9 +58,11 @@ function ContactForm() {
         />
       </div>
 
-      <GetInTouchButton type="submit" label="Send Message">
-        Send Message
-      </GetInTouchButton>
+      <div className="xl:mt-30">
+        <GetInTouchButton type="submit" label="Send Message">
+          Send Message
+        </GetInTouchButton>
+      </div>
     </form>
   );
 }
