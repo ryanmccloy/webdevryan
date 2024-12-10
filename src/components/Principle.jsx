@@ -16,9 +16,7 @@ function Principle({ heading, subHeading, num, content, isActive, onToggle }) {
       }}
     >
       <div className="flex items-center justify-between">
-        <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-          {heading}
-        </h3>
+        <h3>{heading}</h3>
         <div className="pl-15 sm:pl-30">{num}</div>
       </div>
 

@@ -12,7 +12,7 @@
 }
 
 body {
-  @apply overflow-x-hidden bg-background font-sans text-sm leading-relaxed tracking-wide text-primary md:text-base;
+  @apply mx-auto max-w-[1710px] overflow-x-hidden bg-background font-sans text-sm leading-relaxed tracking-wide text-primary md:text-base;
 }
 
 h1,
@@ -20,10 +20,24 @@ h2,
 h3 {
   @apply font-extrabold uppercase;
 }
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
+}
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl;
+}
+
+h3 {
+  @apply text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl;
+}
 
 h4 {
-  @apply text-base font-medium uppercase md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl;
+  @apply text-base font-medium uppercase md:text-lg lg:text-xl;
 }
 h5 {
   @apply font-semibold;
+}
+
+.section-spacing {
+  @apply flex flex-col gap-60 px-30 pb-30 pt-90 md:gap-90 lg:pt-120 xl:px-60;
 }

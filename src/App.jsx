@@ -26,10 +26,5 @@ function App() {
 
 export default App;
 
-// check padding-x on landing vs rest of sections (looks bigger on landing)
-
-// Code review processes
-
-// Global section apdding style, and global heading styles for better maintainability
-// max width on entire webpage
+// favicon and title
 // indication to click on accordion on features section

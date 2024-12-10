@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 function LandingHeading() {
   return (
-    <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+    <h1>
       <div>
         <span className="block sm:inline-block">Professional</span>{" "}
         <span className="block sm:inline-block">Websites,</span>
