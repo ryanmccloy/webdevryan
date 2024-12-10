@@ -47,12 +47,13 @@ function WebsiteFeatures() {
   };
 
   return (
-    <div className="gap-15 md:gap-30 flex flex-col sm:w-2/3 sm:self-end md:w-1/2">
+    <div className="flex flex-col gap-15 sm:w-2/3 sm:self-end md:w-1/2 md:gap-30">
       {principles.map((principle, index) => {
         return (
           <Principle
             key={index}
             heading={principle.heading}
+            subHeading={principle.subHeading}
             num={principle.num}
             content={principle.content}
             isActive={activeIndex === index}

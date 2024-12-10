@@ -26,9 +26,10 @@ function App() {
 
 export default App;
 
-// Code review features
 // check padding-x on landing vs rest of sections (looks bigger on landing)
-// Check processstep component (add icons and check width is correct for each instance - also check the titles and paragraphs are aligned)
+
 // Code review processes
-// Figure out services cards - how to keep grid in center with max-w on each instance
+
 // Global section apdding style, and global heading styles for better maintainability
+// max width on entire webpage
+// indication to click on accordion on features section
